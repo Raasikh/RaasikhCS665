@@ -53,8 +53,23 @@ You can find the schema creation script in: [`create.sql`](./create.sql)
 
 ## 📦 Setup Instructions
 
-### 1. Clone the Repo
+## 📦 How to Run 
+1. Clone the repo: `git clone https://github.com/yourusername/chessapp.git && cd chessapp`
+2. Install requirements: `pip install flask pyodbc`
+3. Ensure Microsoft SQL Server is running and you’ve created a database named `ChessApp` using the provided schema file (`create.sql`).
+4. Run the Flask app: `python app.py`
+5. (Optional) Start Cloudflare tunnel in a second terminal: `cloudflared tunnel --url http://localhost:5000`
 
-```bash
-git clone https://github.com/yourusername/chessapp.git
-cd chessapp
+## 📊 Analytics Dashboard Queries 
+Games with player names (JOIN on Users) 
+AI Games filtered by difficulty (WHERE ai_difficulty = 'Expert') 
+Leaderboard JOIN with Users 
+Top 3 Users by Elo (ORDER BY elo_rating DESC LIMIT 3)
+
+## 📚 Learning Outcomes  SQL 3NF design - Safe parameterized SQL queries - Flask with MSSQL via pyodbc - Deploying local apps securely with Cloudflare Tunnel
+
+## 🧠 Future Additions - User login/authentication - Responsive frontend (Bootstrap or React) - Chess engine integration (Stockfish or Leela) - Export analytics to CSV or visual dashboards
+
+## 🙌 Thanks - Cloudflare for free secure tunneling - ChatGPT for schema and route logic brainstorming - SQL Server for robust relational support
+
+## 👋 Contact Me - GitHub: [https://github.com/yourusername] - LinkedIn: [https://linkedin.com/in/your-profile] - Email: your.email@example.com
