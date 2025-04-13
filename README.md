@@ -71,9 +71,9 @@ You can find the schema creation script in: [`create.sql`](./create.sql)
 ## 📚 Learning Outcomes 
 
 1)SQL 3NF design 
-Safe parameterized SQL queries 
-Flask with MSSQL via pyodbc 
-Deploying local apps securely with Cloudflare Tunnel
+2)Safe parameterized SQL queries 
+3)Flask with MSSQL via pyodbc 
+4)Deploying local apps securely with Cloudflare Tunnel
 
 
 ## 🙌 Thanks 
